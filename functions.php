@@ -1,8 +1,7 @@
-application/x-httpd-php functions.php ( PHP script text )
 <?php
 function ass_enqueue_styles() {
 
-    $parent_style = 'parent-style'; // This is 'twentysixteen-style' for the Twenty Sixteen theme.
+    $parent_style = 'twentysixteen-style';
 
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style',
