@@ -6,3 +6,16 @@
  Version:      1.0.0
  Text Domain:  twentyseventeen-child
 */
+body.page-template-template-full-width #content #primary {
+	max-width: 100%;
+}
+
+body.page-template-template-full-width #content #primary .entry-header,
+body.page-template-template-full-width #content #primary .entry-content {
+    float: none;
+    width: 100%;
+}
+
+body.page-template-template-full-width #content #primary .entry-header {
+    margin-bottom: 4em;
+}
