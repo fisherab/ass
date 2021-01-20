@@ -33,7 +33,7 @@ if ( is_user_logged_in()) {
 			if ($phone_2 != "") $phone = $phone . ' / ' . $phone_2;
 			$img = wp_get_attachment_url(get_user_meta($user-> id, 'photo', true));
 			if ($img == "") $img = get_stylesheet_directory_uri() . '/images/question.jpg';
-			echo '<p><b><img src="' . $img . '" width="80" height="80" style="float:left; margin-right:20px;">' . esc_html($name ) . '</b> &lt' . esc_html( $user->user_email ) . '&gt<br/>' . $address  . '<br/>Tel: ' . $phone .'</p>';
+			echo '<p><b><img src="' . $img . '" width="80" height="80" style="float:left; margin-right:20px;">' . esc_html($name ) . '</b> &lt;' . esc_html( $user->user_email ) . '&gt;<br/>' . $address  . '<br/>Tel: ' . $phone .'</p>';
 		}
 	}
 }?>
